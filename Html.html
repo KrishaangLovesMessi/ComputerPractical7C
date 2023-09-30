@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Html.css">
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="wrapper">
+    <header>
+        <img class="orchids" src="suiboi.png" alt="Orchids The International School">
+        <div class="nav">
+        <h1 class="home"><a href="Code of Choice.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <h1 class="about"><a href="Courses for HTML.html">Courses</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <h1 class="courch"><a href="About.html">About</a></h1>
+        </div>
+    </header>
+    <div class="info">
+        <h1 class="apre">Great Choice!</h1>
+        <h1 class="realinfo">Everything You Need To Know About HTML!</h1>
+        <div class="justify">
+        <p class="bo">
+            HTML, or HyperText Markup Language, is the bedrock of the World Wide Web, originating in the early 1990s through the pioneering efforts of Tim Berners-Lee. Designed as a markup language rather than a programming language, HTML provides a structured means of creating web content. Its core concepts involve using tags and elements to define the structure and relationships within a web document. HTML documents are composed of various elements such as headings, paragraphs, images, links, and more, each represented by specific tags enclosed in angle brackets. This markup language encourages semantic web design by employing elements that convey content meaning, like headings, lists, and hyperlinks. Additionally, HTML can be enhanced with CSS for styling and JavaScript for interactivity, while web browsers interpret and render HTML documents into the web pages we interact with daily. HTML5, the latest version, has become the cornerstone of modern web development, underpinning the structure and organization of digital content across the internet.</p>
+    </div>
+        </div>
+        <div class="button-container">
+            <a href="https://www.w3schools.com/html/">
+        <button class="button orange-button">Let's Start Learning HTML!!</button>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <h1>&copy;Copyright Reserved</h1>
+        <h1 class="name-scol">Orchids The International School</h1>
+    </footer>
+    <script>
+        window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+    </script>
+</body>
+</html>

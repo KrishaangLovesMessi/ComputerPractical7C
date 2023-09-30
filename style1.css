@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --mainColor: #89216b;
+    --whiteColor: #ffffff;
+    --titleColor: #555555;
+    --labelColor: #333333;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to right, #da4453, var(--mainColor));
+    font-weight: 400;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+h1 {
+    position: relative;
+    top: -100px; /* Initial position above the webpage */
+    animation: slideUp 1s forwards; /* Animation to slide up and stay in position */
+    font-size: xx-large;
+  }
+
+  @keyframes slideUp {
+    0% { top: -100px; }
+    100% { top: 1.5cm; } /* Final position 1.5cm from the top */
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 3cm;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 20px 150px;
+    font-size: 23px;
+    border-radius: 100px;
+    cursor: pointer;
+    animation: buttonAnimation 2s forwards;
+    margin-top: 2cm;
+  }
+  
+  .blue-button {
+    background-color: blue;
+    color: white;
+  }
+  
+  .orange-button {
+    background-color: #DD571C;
+    color: white;
+  }
+  
+  @keyframes buttonAnimation {
+    0% {
+      transform: translateY(-80px);
+    }
+    100% {
+      transform: translateY(30px);
+    }
+  }
+  
+  .container {
+    text-align: center;
+  }
+
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start; /* Adjusted to align items to the left */
+    align-items: center;
+    margin-top: 2cm;
+    overflow: hidden; /* Added to hide any overflow */
+  }
+  
+  .moving-image {
+    height: 100px;
+    animation: moveLight 3s forwards;
+      width: 350px;
+      height: auto;
+  }
+  
+  .moving-image:first-child {
+    margin-right: 10cm;
+  }
+  
+  @keyframes moveLight {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(100% - 6.5cm)); } /* Adjusted to stop before going too far right */
+  }
+
+  .logout-button {
+      position: absolute;
+      top: 65%;
+      left: 39%;
+      width:300px;
+      height: 70px;
+      background-color: #00FF00;
+      padding: 10px;
+      border-radius: 100px;
+      display: flex;
+      rotate: 90deg;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      color: black;
+      font-size: 22px;
+      font-weight: 600;
+    }

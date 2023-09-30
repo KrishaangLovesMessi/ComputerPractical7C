@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --mainColor: #89216b;
+    --whiteColor: #ffffff;
+    --titleColor: #555555;
+    --labelColor: #333333;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to right, #da4453, var(--mainColor));
+    font-weight: 400;
+    min-height: 10vh;
+    display: grid;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    background-color: yellow;
+    padding: 1.3cm;
+}
+
+.orchids {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.nav {
+    display: inline-flex;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: larger;
+}
+
+.wrapper {
+    min-height: calc(100vh - 3cm);
+    padding-bottom: 3cm;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3cm;
+    background-color: black; /* Add this line */
+    color: white; /* Add this line */
+  }
+
+  .name-scol {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .apre {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 25px;
+  }
+
+  .realinfo {
+    margin-top: 2%;
+    font-size: 35px;
+  }
+
+  .justify {
+    text-align: justify;
+  }
+
+  .bo {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 2%;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 3cm;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 20px 150px;
+    font-size: 23px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 0.5cm;
+  }
+  
+  .orange-button {
+    background-color: #DD571C;
+    color: white;
+  }
+
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  

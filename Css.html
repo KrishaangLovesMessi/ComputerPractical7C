@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css.css">
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="wrapper">
+    <header>
+        <img class="orchids" src="suiboi.png" alt="Orchids The International School">
+        <div class="nav">
+        <h1 class="Home"><a href="Code of Choice.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <h1 class="About"><a href="Courses for CSS.html">Courses</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <h1 class="Courses"><a href="About.html">About</a></h1>
+        </div>
+    </header>
+    <div class="info">
+    <h1 class="apre">Nice Choice!</h1>
+    <h1 class="realinfo">Everything You Need To Know About CSS!</h1>
+    <div class="justify">
+    <p class="bo">
+        Cascading Style Sheets (CSS) originated as a solution to the growing complexity of web design in the early days of the World Wide Web. Prior to CSS, web pages were predominantly text-based with limited styling options. Recognizing the need for a more versatile and efficient method for styling web content, Håkon Wium Lie and Bert Bos collaborated on the development of CSS in 1994. This collaboration culminated in the release of the first CSS specification, CSS1, as a World Wide Web Consortium (W3C) Recommendation in 1996. CSS was revolutionary because it separated the presentation of web pages from their structure, promoting cleaner and more maintainable code. Subsequent versions, including CSS2 and CSS3, expanded the capabilities of CSS, introducing advanced layout features and modularity. Today, CSS remains a fundamental technology for web design, allowing developers to control the visual aspects of web content across a wide range of devices and screen sizes.</p>
+    </div>
+    </div>
+    <div class="button-container">
+        <a href="https://www.w3schools.com/css/">
+    <button class="button blue-button">Let's Start Learning CSS!!</button>
+        </a>
+    </div>
+    </div>
+    <footer>
+        <h1>&copy;Copyright Reserved</h1>
+        <h1 class="name-scol">Orchids The International School</h1>
+    </footer>
+    <script>
+        window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+setTimeout(function(){
+    // No pop-ups or additional content
+  }, 1000);
+    </script>
+</body>
+</html>
